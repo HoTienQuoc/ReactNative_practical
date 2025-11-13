@@ -3,14 +3,22 @@ import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
 export default function App() {
   return (
-    <View style={{padding:50, flexDirection:'row-reverse', width:'80%', height:'300'}}>
+    <View style={{
+      padding:50,
+      flexDirection:'row',
+      width:'80%',
+      height:'300',
+      justifyContent:'space-around',
+      alignItems:'center'
+    }}>
       <View
         style={{
           backgroundColor: 'red',
-          width: 100,
-          height: 100,
+          // width: 100,
+          // height: 100,
+          flex:1,
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'stretch'
         }}
       >
         <Text>1</Text>
@@ -18,8 +26,8 @@ export default function App() {
       <View
         style={{
           backgroundColor: 'blue',
-          width: 100,
-          height: 100,
+          // width: 100,
+          // height: 100,
           justifyContent: 'center',
           alignItems: 'center'
         }}
@@ -29,8 +37,8 @@ export default function App() {
       <View
         style={{
           backgroundColor: 'green',
-          width: 100,
-          height: 100,
+          // width: 100,
+          // height: 100,
           justifyContent: 'center',
           alignItems: 'center'
         }}
